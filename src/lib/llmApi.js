@@ -27,7 +27,7 @@ export async function callLLM({ provider, model, chatHistory, systemPrompt, apiK
     ];
 
     const body = {
-      model: model || 'gpt-4o', // 동적 모델 할당
+      model: model || 'gpt-5.5', // 2026년 GPT-5.5 디폴트 할당
       messages: formattedMessages,
       temperature: 0.3
     };
@@ -62,7 +62,7 @@ export async function callLLM({ provider, model, chatHistory, systemPrompt, apiK
     }));
 
     const body = {
-      model: model || 'claude-3-5-sonnet-20240620', // 동적 모델 할당
+      model: model || 'claude-5-fable', // 2026년 Claude 5 Fable 디폴트 할당
       max_tokens: 4000,
       system: systemPrompt,
       messages: formattedMessages,

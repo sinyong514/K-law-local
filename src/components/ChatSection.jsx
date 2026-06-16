@@ -18,11 +18,19 @@ export default function ChatSection({ selectedContext, apiKeys }) {
   const messagesEndRef = useRef(null);
 
   const models = [
+    // Google Gemini
     { id: 'gemini-3.5-flash', name: 'Gemini 3.5 Flash', provider: 'gemini' },
     { id: 'gemini-3.5-pro', name: 'Gemini 3.5 Pro', provider: 'gemini' },
     { id: 'gemini-2.0-flash', name: 'Gemini 2.0 Flash', provider: 'gemini' },
-    { id: 'gpt-4o', name: 'GPT-4o', provider: 'openai' },
-    { id: 'claude-3-5-sonnet-20240620', name: 'Claude 3.5 Sonnet', provider: 'anthropic' }
+    // OpenAI
+    { id: 'gpt-5.5', name: 'GPT-5.5 (Flagship)', provider: 'openai' },
+    { id: 'gpt-5.4-pro', name: 'GPT-5.4 Pro', provider: 'openai' },
+    { id: 'gpt-5.4-mini', name: 'GPT-5.4 Mini', provider: 'openai' },
+    { id: 'gpt-4o', name: 'GPT-4o (Legacy)', provider: 'openai' },
+    // Anthropic
+    { id: 'claude-5-fable', name: 'Claude 5 Fable (Latest)', provider: 'anthropic' },
+    { id: 'claude-4.6-sonnet', name: 'Claude 4.6 Sonnet', provider: 'anthropic' },
+    { id: 'claude-3-5-sonnet-20241022', name: 'Claude 3.5 Sonnet v2 (Legacy)', provider: 'anthropic' }
   ];
 
   const activeModel = models.find(m => m.id === selectedModel);
