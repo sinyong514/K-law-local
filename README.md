@@ -79,3 +79,8 @@ npm run tauri build
 프로젝트 실행 후 왼쪽 아래 **설정(톱니바퀴)** 탭에서 아래 키들을 등록한 뒤 **[설정 저장]**을 완료하셔야 정상 작동합니다.
 *   **대한민국 법제처 Open API 인증키(OC)**: [법제처 공동활용 가이드](https://open.law.go.kr/)에서 발급받으실 수 있습니다.
 *   **AI API Credentials**: OpenAI, Anthropic, Google AI Studio에서 각각 발급받으신 개인 키를 입력합니다.
+
+---
+
+## 📜 참고 및 출처 (Credits & Acknowledgements)
+본 프로젝트는 대한민국 법제처 Open API 연동 및 판례 생사(Citator) 분석 구조 구현 시, 오픈소스 프로젝트인 **[chrisryugj/korean-law-mcp](https://github.com/chrisryugj/korean-law-mcp)** 서버의 유용한 로직과 아이디어를 적극 참고하고 영감을 받아 제작되었습니다. 훌륭한 대한민국 법률 특화 MCP 서버 기여에 깊이 감사드립니다.
